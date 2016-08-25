@@ -1,4 +1,4 @@
-function subreddits (state = [], action) {
+function makes (state = [], action) {
   switch (action.type) {
     case 'RECEIVE_POSTS':
       return [
@@ -10,4 +10,4 @@ function subreddits (state = [], action) {
   }
 }
 
-export default subreddits
+export default makes

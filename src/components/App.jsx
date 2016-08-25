@@ -1,12 +1,12 @@
 import React from 'react'
 
-import LoadSubreddit from './LoadSubreddit'
-import SubredditContainer from '../containers/SubredditContainer'
+import LoadCars from './LoadCars'
+import CarsContainer from '../containers/CarsContainer'
 
 const App = () => (
   <div className='app-container'>
-    <LoadSubreddit />
-    <SubredditContainer />
+    <LoadCars />
+    <CarsContainer />
   </div>
 )
 

@@ -1,11 +1,11 @@
 import React, {PropTypes} from 'react'
 
-const Post = ({title}) => (
-  <div>{title}</div>
+const Post = ({id}) => (
+  <div>{id}</div>
 )
 
 Post.propTypes = {
-  title: PropTypes.string.isRequired
+  id: PropTypes.number.isRequired
 }
 
 export default Post

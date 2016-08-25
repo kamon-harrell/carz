@@ -1,8 +1,7 @@
 import {combineReducers} from 'redux'
 
-import subreddits from './subreddits'
+import makes from './makes'
 
 export default combineReducers({
-  subreddits
+  makes
 })
-

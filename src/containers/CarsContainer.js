@@ -1,13 +1,13 @@
 import {connect} from 'react-redux'
 
-import Subreddit from '../components/Subreddit'
+import Makes from '../components/Makes'
 
 const mapStateToProps = (state) => {
   return {
-    subreddits: state.subreddits
+    makes: state.makes
   }
 }
 
 export default connect(
   mapStateToProps
-)(Subreddit)
+)(Makes)
