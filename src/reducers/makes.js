@@ -7,12 +7,16 @@ function makes (state = [], action) {
 
       case 'DELETE_NAME':
         const newState = [...state].filter(function(key) {
-          if(key.id !== parseInt(action.name,10)){
+          if(key.id !== parseInt(action.name,10) && key.id !== action.name){
             return key
           }
         })
         return newState
 
+        case 'SHOW_MODEL':
+          return [
+            ...action.models
+          ]
 
     default:
       return state

@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react'
 
 import Post from './Post'
 
-const Makes = ({makes, del}) => (
+const Makes = ({makes, del, show}) => (
   <div>
     {makes.map((post, i) =>
     <div key={i}>
@@ -13,19 +13,17 @@ const Makes = ({makes, del}) => (
         del(evt.target.name)
       }}>
         Del
-      </button>
+        </button>
+        <button
+          onClick={() => { show(post.models) }}>
+          Show Models</button>
     </div>
     )}
   </div>
 )
 
-Makes.propTypes = { 
-  makes: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      make: PropTypes.string.isRequired
-    }).isRequired
-  ).isRequired
+Makes.propTypes = {
+
 }
 
 export default Makes

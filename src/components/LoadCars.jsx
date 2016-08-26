@@ -4,8 +4,9 @@ import {fetchPosts} from '../actions'
 
 let LoadCars = ({dispatch}) => (
   <button
-    onClick={() => dispatch(fetchPosts())}
-    >Fetch Posts</button>
+    onClick={() => dispatch(fetchPosts())}>
+      Fetch Cars
+    </button>
 )
 
 LoadCars = connect()(LoadCars)

@@ -16,6 +16,13 @@ export const deleteName = name => {
   }
 }
 
+export const showModel = models => {
+  return {
+    type: 'SHOW_MODEL',
+    models
+  }
+}
+
 //const key = faaaf8a7rtsa3z49dgt7ctf9
 
 export function fetchPosts () {
