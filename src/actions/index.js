@@ -8,6 +8,14 @@ export const receivePosts = (posts) => {
   }
 }
 
+
+export const deleteName = name => {
+  return {
+    type: 'DELETE_NAME',
+    name
+  }
+}
+
 //const key = faaaf8a7rtsa3z49dgt7ctf9
 
 export function fetchPosts () {

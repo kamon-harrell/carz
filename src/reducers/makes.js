@@ -5,6 +5,15 @@ function makes (state = [], action) {
         ...action.posts
       ]
 
+      case 'DELETE_NAME':
+        const newState = [...state].filter(function(key) {
+          if(key.id !== parseInt(action.name,10)){
+            return key
+          }
+        })
+        return newState
+
+
     default:
       return state
   }
