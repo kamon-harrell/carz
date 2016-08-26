@@ -9,16 +9,20 @@ const Makes = ({makes, del, show}) => (
       <Post
         {...post}
       />
-      <button name={post.id} onClick={evt => {
+      <button className="btn"
+        onClick={() => { show(post.models) }}>
+        Show Models
+      </button>
+      <button className="btn-red" name={post.id} onClick={evt => {
         del(evt.target.name)
       }}>
-        Del
+        Delete
         </button>
-        <button
-          onClick={() => { show(post.models) }}>
-          Show Models</button>
+        <span className="sexy_line"></span>
     </div>
+
     )}
+
   </div>
 )
 

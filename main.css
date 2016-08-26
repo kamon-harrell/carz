@@ -1,4 +1,110 @@
+@font-face {
+    font-family: raleway;
+    src: url('src/Raleway-Regular.ttf');
+}
+
+
+body {
+  background-image: url('src/road_lmao.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: raleway;
+}
+
+
+#app {
+  width: 50%;
+  background-color: rgba(255,255,255,0.8);
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
 .list {
   display: inline-block;
   margin: 5px;
+  text-align: center;
+
+  margin: 0px auto;
+
+  width: 50%;
+    font-family: raleway;
+}
+
+.btn {
+  padding: 10px;
+  font-family: raleway;
+  margin: 0px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  font-size: 2em;
+  background-color: black;
+  color: white;
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s;
+}
+
+.btn:hover{
+  padding: 10px;
+  font-family: raleway;
+  margin: 0px 20px;
+  font-size: 2em;
+
+  border: 1px solid black;
+  border-radius: 5px;
+
+  background-color: white;
+  color: black;
+
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s;
+}
+
+.btn-red:hover {
+  padding: 10px;
+  margin: 0px 20px;
+  font-size: 2em;
+  border: 1px solid red;
+  border-radius: 5px;
+
+  background-color: white;
+  color: red;
+
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s;
+}
+
+.btn-red {
+  padding: 10px;
+  margin: 0px 20px;
+  font-size: 2em;
+  border: 1px solid red;
+  border-radius: 5px;
+
+  background-color: red;
+  color: white;
+
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s;
+}
+
+p {
+  font-size: 2em;
+  font-family: raleway;
+}
+
+#fetchbtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+.sexy_line{
+  margin: 20px;
+    display:block;
+    border:none;
+    color:rgba(255,255,255,0.8);
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
 }

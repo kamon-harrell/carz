@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {fetchPosts} from '../actions'
 
 let LoadCars = ({dispatch}) => (
-  <button
+  <button className="btn" id="fetchbtn"
     onClick={() => dispatch(fetchPosts())}>
       Fetch Cars
     </button>

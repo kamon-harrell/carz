@@ -2,10 +2,7 @@ import React, {PropTypes} from 'react'
 
 const Post = ({name, models}) => (
   <div className="list">
-  {name}
-    <div>
-
-    </div>
+    <p> {name} </p>
   </div>
 )
 
